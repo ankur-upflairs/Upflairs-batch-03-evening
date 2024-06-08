@@ -1,0 +1,16 @@
+tags= > tell the browser to what to display and how to display
+<tag_name> opening tag
+</tag_name> closing tag
+<p>
+
+element =>opening tag + content + closing tag
+
+<p> this is a paragraph </p>
+
+html ignores multiple spaces
+
+https://html.spec.whatwg.org/multipage/named-characters.html#named-character-references
+
+html ignores line breaks
+
+
