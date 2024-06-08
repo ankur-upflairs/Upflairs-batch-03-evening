@@ -13,4 +13,8 @@ https://html.spec.whatwg.org/multipage/named-characters.html#named-character-ref
 
 html ignores line breaks
 
+attributes - provide some extra information about tags
+used in opening tag and after tag_name
+
+eg. - attributes_name="value"
 
