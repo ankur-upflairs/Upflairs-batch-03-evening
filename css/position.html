@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .b{width: 100px;height: 100px;border: 1px solid;}
+        .abs{
+            position: absolute;bottom: 50px;right: 100px;
+            }
+        .rel{position: relative;bottom: 50px;right: 50px;}
+        .fix{
+            position: fixed;left: 0px;bottom: 0px;
+        }
+        .a{height: 1000px;}
+        .sticky{
+            position: sticky;top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="abs b">abs</div>
+    <div class="rel b">rel</div>
+
+    <div class="fix b">fixed</div>
+    <div class="sticky b">sticky</div>
+    <div class="a"></div>
+    
+</body>
+</html>
