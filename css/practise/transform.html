@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Document</title>
+    <style>
+        .box1{ width: 150px;height: 150px;border: 1px solid;
+        transition: all 2s;
+        }
+        .box2{ width: 150px;height: 150px;border: 1px solid;
+        transition: all 2s;}
+        .box1:hover{transform: translateX(200px);}
+        .box2:hover{transform: rotate(360deg);}
+        .box{ width: 80px;height: 30px;border: 1px solid;
+        transform: rotate(90deg);
+        position: fixed;
+        right: -20px;
+        top: calc(50% - 40px);
+        margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class='box1'></div>
+    <div class='box2'></div>
+    <div class="box">Careers</div>
+</body>
+</html>

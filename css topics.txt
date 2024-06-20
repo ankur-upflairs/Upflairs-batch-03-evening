@@ -1,0 +1,18 @@
+basic css
+border and border radius
+margin and padding
+box-model
+background
+text and font
+google fonts
+fontawsome icons
+shadow
+float
+position
+flex
+hover
+dropdown
+transition
+transform
+animation
+mediaquery

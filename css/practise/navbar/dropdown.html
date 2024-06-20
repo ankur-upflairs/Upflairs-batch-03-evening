@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{list-style: none;}
+        .nav{display: flex;height: 40px;border: 1px solid blue;}
+        .nav li{flex-grow: 1; padding-top: 10px;
+            text-align: center;
+            border: 1px solid blue;}
+            .nav li:hover{background-color: lightblue;}
+        .di1{display: none;
+            position: absolute;
+            left: -40px;
+            top: 40px;
+            width: 100%;}
+        .dm{position: relative;}
+        .dm:hover .di1{display: block;}
+        .di1 li{height: 40px;}
+        .di2{display: none;
+            position: absolute;
+            left: 245px;
+            top: 51px;
+            width: 100%;}
+        .dm1:hover .di2{display: block;}
+        
+    </style>
+</head>
+<body>
+    <ul class="nav">
+        <li>home</li>
+        <li class="dm">services
+            <ul class="di1">
+                <li>web design</li>
+                <li class="dm1">mobile app
+                    <ul class="di2">
+                        <li>ios</li>
+                        <li>android</li>
+                        <li>windows</li>
+                    </ul>
+                </li>
+                <li>Advertisement</li>
+            </ul>
+        </li>
+        <li>blog</li>
+        <li>contact us</li>
+        <li>about us</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .dropdown-item{display: none;}
+        .dropdown:hover .dropdown-item{display: block;} */
+        .nav {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        .dropdown-item {
+            display: none;
+            position: absolute;
+            left: -40px;
+        }
+
+        .dropdown:hover .dropdown-item {
+            display: block;
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-item li {
+            margin-bottom: 10px;
+            border-bottom: 1px solid;
+        }
+
+        .dropdown-item li:hover {
+            border: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="dropdown">
+        <div class="dropdown-menu">hover here to show dropdown</div>
+        <div class="dropdown-item">show on hover</div>
+    </div>
+    <ul class="nav">
+        <li>home</li>
+        <li>contact</li>
+        <li class="dropdown">services
+            <ul class="dropdown-item">
+                <li>web development</li>
+                <li>app development</li>
+                <li>dev OPs</li>
+                <li>data science</li>
+            </ul>
+        </li>
+        <li>enquiry</li>
+        <li>FAQ</li>
+    </ul>
+    <p>fkjd</p>
+</body>
+
+</html>
