@@ -15,21 +15,25 @@
             animation-duration: 4s;
             animation-iteration-count: infinite;
             /* transition: all 4s; */
+            animation-timing-function: linear;
         }
         @keyframes rollandrotate{
             0%{
                 margin-left: 0px;
+                background-color: red;
                 
             }
             50%{
                 transform: rotate(180deg);
                 margin-left: 100px;
                 border-radius: 25%;
+                background-color: yellow;
             }
             100%{
                 transform: rotate(360deg);
                 margin-left: 200px;
                 border-radius: 50%;
+                background-color: yellowgreen;
             }
         }
 

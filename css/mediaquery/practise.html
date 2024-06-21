@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Document</title>
+    <style>
+        .outerbox{ border: 1px solid;
+        display: flex;}
+        .box{ width: 150px;border: 1px solid red;
+        flex-grow: 1;}
+        .box1{}
+        .box2{}
+        @media screen and (max-width:776px) {
+            .outerbox{
+                display: block;
+            }
+            .box{width: 100%;}
+        }
+    </style>
+</head>
+<body>
+    <div class='outerbox'>
+        <div class='box box1'>
+            <div class="t">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque natus alias quod, mollitia autem aliquam rem repellat tempora ea, deserunt, quo expedita eveniet veniam consequuntur provident impedit dolorem officiis veritatis reprehenderit assumenda.
+
+            </div>
+            <div class="i">
+                <input type="text">
+            </div>
+        </div>
+        <div class='box box2'>
+            <img src="image.webp" alt="" width="100%">
+        </div>
+    </div>
+</body>
+</html>
