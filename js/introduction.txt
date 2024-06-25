@@ -1,0 +1,9 @@
+js => js is a high level scripting language that used to make webpages interactive and dynamic.
+
+implementation =>
+1. inpage
+2. external js
+
+in page - use script tag at the end of body
+
+we create a file with extension .js . use script tag to link external js file
