@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dark{background-color: rgb(37, 35, 35);}
+        
+    </style>
+</head>
+<body>
+    <button>dark</button>
+    <p id="p1">hello</p>
+    <p id="p2">everyone</p>
+    <button>add</button>
+    <div></div>
+    <script >
+        let btn=document.querySelector('button')
+        let body=document.body
+        btn.addEventListener('click',function () {
+            body.classList.toggle('dark')
+            if(btn.innerText=='dark'){
+                btn.innerText='white'
+            }else{
+                btn.innerText='dark'
+
+            }
+        })
+        let btn2=document.querySelectorAll('button')[1]
+        let para=document.querySelectorAll('p')
+
+        btn2.addEventListener('click',function () {
+            let text=para[0].innerText + ' ' + para[1].innerText
+            document.querySelector('div').innerHTML=`<h1>${text}</h1>`
+
+        })
+
+    </script>
+</body>
+</html>
