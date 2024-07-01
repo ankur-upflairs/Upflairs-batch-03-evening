@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Document</title>
+    <style>
+        .box1 {
+            width: 150px;
+            height: 150px;
+            border: 1px solid;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <button>top</button>
+    <button>bottom</button>
+    <button>left</button>
+    <button>right</button>
+    <div class='box1'></div>
+    <script>
+        let t = 0
+        let left = 0
+        let btnTop = document.querySelectorAll('button')[0]
+        let btnBottom = document.querySelectorAll('button')[1]
+        let btnLeft = document.querySelectorAll('button')[2]
+        let btnRight = document.querySelectorAll('button')[3]
+        let box=document.querySelector('.box1')
+
+        btnTop.addEventListener('click',()=>{
+            t-=10;
+            box.style.top=`${t}px`
+        })
+        btnBottom.addEventListener('click',()=>{
+            t+=10;
+            box.style.top=`${t}px`
+        })
+        btnLeft.addEventListener('click',()=>{
+            left-=10;
+            box.style.left=`${left}px`
+        })
+        btnRight.addEventListener('click',()=>{
+            left+=10;
+            box.style.left=`${left}px`
+        })
+
+    </script>
+</body>
+
+</html>
