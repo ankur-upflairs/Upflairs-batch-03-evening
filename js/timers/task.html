@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Document</title>
+    <style>
+        .box1 {
+            width: 100px;
+            height: 100px;
+            border: 1px solid;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            transition: all 100ms;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class='box1'></div>
+    <script>
+        let box = document.querySelector('.box1')
+        let t = 0;
+        let left = 0;
+        let movement = ['tl', 'tr', 'br', 'bl']
+        let curentMovement = 'tl'
+        console.log(window.innerWidth)
+
+        setInterval(() => {
+                let leftOffset=box.offsetLeft
+                let topoffset=box.offsetTop
+                let screenWidth=window.innerWidth - 120
+                let screenHeight=window.innerHeight - 120
+            if (curentMovement == 'tl') {
+                left++
+                box.style.left = `${left}%`
+                console.log(box.offsetLeft)
+                if (leftOffset >= screenWidth) curentMovement = 'tr'
+            }
+            if (curentMovement == 'tr') {
+                t++; box.style.top = `${t}%`
+                if (topoffset >= screenHeight) curentMovement = 'br'
+            }
+            if (curentMovement == 'br') {
+                left--; box.style.left = `${left}%`
+                if (leftOffset == 0) curentMovement = 'bl'
+            }
+            if (curentMovement == 'bl') {
+                t--; box.style.top = `${t}%`
+                if (topoffset >= 0) curentMovement = 'tl';
+            }
+        }, 100)
+
+    </script>
+</body>
+
+</html>
