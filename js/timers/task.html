@@ -16,11 +16,17 @@
             transition: all 100ms;
             background-color: red;
         }
+
+        .name{
+            background-color: rebeccapurple;
+            height: 100px;
+        }
     </style>
 </head>
 
 <body>
     <div class='box1'></div>
+    <div class="r1">hwwww</div>
     <script>
         let box = document.querySelector('.box1')
         let t = 0;
@@ -37,7 +43,7 @@
             if (curentMovement == 'tl') {
                 left++
                 box.style.left = `${left}%`
-                console.log(box.offsetLeft)
+                // console.log(box.offsetLeft)
                 if (leftOffset >= screenWidth) curentMovement = 'tr'
             }
             if (curentMovement == 'tr') {
@@ -53,6 +59,11 @@
                 if (topoffset >= 0) curentMovement = 'tl';
             }
         }, 100)
+
+        let a=[1,2,3,4,5,6]
+
+        a++;
+        console.log(a);
 
     </script>
 </body>
