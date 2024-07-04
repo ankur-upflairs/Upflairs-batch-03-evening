@@ -44,7 +44,7 @@ async function getJoke() {
     })
     let data= await res.json()
     console.log(data)
-    box.innerHTML=data.joke
+    box.innerHTML=`<h1>${data.joke}</h1>`
 }
 getJoke()
 

@@ -17,6 +17,7 @@ let ms=0;
 startBtn.addEventListener('click',function(){
     if(!interval){
         interval=setInterval(() => {
+            console.log(interval)
             ms++
             if(ms==999){
                 ms=0;sec++
@@ -27,6 +28,8 @@ startBtn.addEventListener('click',function(){
 })
 stopBtn.addEventListener('click',function(){
     clearInterval(interval)
+    interval=false
+    // console.log(interval)
 })
 clearBtn.addEventListener('click',function(){
         ms=0;sec=0;
