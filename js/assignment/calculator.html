@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cell{width: 50px;height: 50px;border: 1px solid;}
+        .container{width: 250px;display: flex;
+            justify-content: space-between;flex-wrap: wrap;}
+            .c1{width: 100%;height: 50px;border: 1px solid;}
+            .c2{width: 50%;height: 50px;border: 1px solid;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="c1">
+        <input type="text" id="result">
+        </div>
+        <div class="cell">+</div>
+        <div class="cell">-</div>
+        <div class="cell">*</div>
+        <div class="cell">/</div>
+        <div class="cell">1</div>
+        <div class="cell">2</div>
+        <div class="cell">3</div>
+        <div class="cell">4</div>
+        <div class="cell">5</div>
+        <div class="cell">6</div>
+        <div class="cell">7</div>
+        <div class="cell">8</div>
+        <div class="cell">9</div>
+        <div class="cell">0</div>
+        <div class="c2">=</div>
+        
+    </div>
+    <script>
+        let btn=document.querySelectorAll('.cell')
+        let input=document.getElementById('result')
+        let eqBtn=document.querySelector('.c2')
+        let result=''
+        btn.forEach((el)=>{
+            el.addEventListener('click',function(e){
+                result+=this.innerText
+                // console.log(result)
+                input.value=result
+
+            })
+        })
+        eqBtn.addEventListener('click',function (e) {
+            let x=eval(result)
+            input.value=x
+            result=''
+        })
+
+
+
+    </script>
+</body>
+</html>
