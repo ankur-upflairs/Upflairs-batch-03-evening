@@ -1,0 +1,10 @@
+node --version
+npm -v
+to create a project ----
+npm create vite@latest project_name
+--------
+to install all dependency 
+npm i / npm install
+----------
+to start the server 
+npm run dev
