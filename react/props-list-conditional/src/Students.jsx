@@ -17,14 +17,14 @@ function Students() {
      return (
        <div style={style}>
            {data.map((value,index,arr)=>{
-               return <>
+               return <div key={value.id}>
                {value.age >= 18?<Student {...value} />:<Minor/>}
-               </>
+               </div>
            })}
        </div>
      )
    }
-   
+
 
 
 
