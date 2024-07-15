@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="square(n)">square</button>
+    <button onclick="cube(n)">cube</button>
+    <button onclick="table(n)">table</button>
+    <div class="box"></div>
+    <script>
+        let n=parseInt(prompt('enter a no.'))
+        let box=document.querySelector('.box')
+        function square(n){
+           box.innerHTML=n**2
+        }
+        function cube(n){
+           box.innerHTML=n**3
+        }
+        function table(n){
+            let table=''
+            for(let i=1;i<=10;i++){
+                table+=`<p>${n*i}</p>`
+            }
+            box.innerHTML=table
+        }
+    </script>
+</body>
+</html>
