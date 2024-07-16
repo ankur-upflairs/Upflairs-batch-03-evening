@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .b{
+            background-color: red;
+        }
+        .c{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <p class="a" id="b">paragraph</p>
+    <script>
+        let paragraph=document.getElementById('b')
+        // console.log(paragraph.getAttribute('class'))
+        // paragraph.setAttribute('class','c')
+        // console.log(paragraph.getAttribute('class'))
+        paragraph.classList.add('b','c')
+        paragraph.classList.remove('c')
+        paragraph.classList.toggle('b')
+        paragraph.classList.toggle('b')
+    </script>
+</body>
+</html>
